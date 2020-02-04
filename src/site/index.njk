@@ -1,0 +1,37 @@
+---
+title: ElevenTail
+layout: default
+---
+
+<div class=" text-center">
+  <p>I write <a href="/poems">poetry</a>,
+    <a href="/blog">blog</a>,
+    code,
+    and play saxophone
+  </p>
+  <p>I publish a poem every day,</p>
+  <p>and a blog post once a week.</p>
+</div>
+<div class="flex py-6 px-4">
+  <div class="latest-poem w-1/2">
+    <p class="italic">Today's poem:</p>
+      {%- for item in collections.poem | reverse -%}
+        <p class="font-bold">{{ item.data.title }}</p>
+        {{ item.templateContent | safe }}
+      {%- endfor -%}
+      <div class="mt-8">
+        <a href="#">yesterday's poem</a> &bull; 
+        <a href="/poems">all poems</a>
+      </div>
+  </div>
+  <div class="latest-post w-1/2">
+    <p class="italic">Latest post:</p>
+      {%- for item in collections.post | reverse -%}
+        <p class="font-bold">
+          <a href="{{ item.url }}">{{ item.data.title }}</a>
+        </p>
+        {{ item.templateContent | section | safe }}
+      {%- endfor -%}
+    <p class="mt-8"><a href="/blog">all posts</a></p>
+  </div>
+</div>
