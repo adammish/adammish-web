@@ -1,0 +1,5 @@
+{
+    "layout" : "layouts/post.njk",
+    "tags" : "track",
+    "templateEngineOverride": "njk,md"
+  }

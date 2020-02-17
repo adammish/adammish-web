@@ -1,21 +1,23 @@
 ---
-title: ElevenTail
+title: Adam Mish
 layout: default
 ---
 
 <div class=" text-center">
   <p>I write <a href="/poems">poetry</a>,
-    <a href="/blog">blog</a>,
-    code,
-    and play saxophone
+    <a href="/music">music</a>,
+    <a href="/code">code</a>,
+    <a href="https://twitter.com/adammish">tweets</a>,
+    and <a href="/blog">blog posts</a>.
   </p>
   <p>I publish a poem every day,</p>
-  <p>and a blog post once a week.</p>
+  <p>a blog post once a week,</p>
+  <p>and blog posts whenever the mood strikes.</p>
 </div>
-<div class="flex py-6 px-4">
-  <div class="latest-poem w-1/2">
+<div class="flex flex-col md:flex-row px-4">
+  <div class="latest-poem md:w-1/2 py-6">
     <p class="italic">Today's poem:</p>
-      {%- for item in collections.poem | reverse -%}
+      {%- for item in collections.poem | head(-1) -%}
         <p class="font-bold">{{ item.data.title }}</p>
         {{ item.templateContent | safe }}
       {%- endfor -%}
@@ -24,9 +26,24 @@ layout: default
         <a href="/poems">all poems</a>
       </div>
   </div>
-  <div class="latest-post w-1/2">
-    <p class="italic">Latest post:</p>
-      {%- for item in collections.post | reverse -%}
+  <div class="latest-track md:w-1/2 py-6">
+    <p class="italic">Latest track:</p>
+      {%- for item in collections.track | head(-1) -%}
+        <p class="font-bold">
+          <a href="{{ item.url }}">{{ item.data.title }}</a>
+        </p>
+        {{ item.templateContent | section | safe }}
+      {%- endfor -%}
+    <div class="mt-8">
+    <a href="/blog">all tracks</a> &bull; 
+        <a href="/poems">spotify</a>
+      </div>
+  </div>
+</div>
+<div class="px-4">
+  <div class="latest-posts py-6">
+    <p class="italic">Latest posts:</p>
+      {%- for item in collections.post | head(-3) | reverse -%}
         <p class="font-bold">
           <a href="{{ item.url }}">{{ item.data.title }}</a>
         </p>

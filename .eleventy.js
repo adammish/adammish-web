@@ -31,6 +31,15 @@ module.exports = function(eleventyConfig) {
   // compress and combine js files
   eleventyConfig.addFilter("jsmin", require("./src/utils/minify-js.js") );
 
+  // Get the first `n` elements of a collection.
+  eleventyConfig.addFilter("head", (array, n) => {
+    if( n < 0 ) {
+      return array.slice(n);
+    }
+
+    return array.slice(0, n);
+  });
+
   // minify the html output when running in prod
   if (process.env.NODE_ENV == "production") {
     eleventyConfig.addTransform("htmlmin", require("./src/utils/minify-html.js") );
