@@ -3,11 +3,9 @@ title: Coding has made me braver
 date: 2020-03-02
 ---
 
-Coding has made me braver
+I've been coding professionally now for years, and was thinking about affects it has had on my life outside of work. One thing it has definitely done is made me braver.
 
 <!--more-->
-
-I've been coding professionally now for years, and was thinking about affects it has had on my life outside of work. One thing it has definitely done is made me braver.
 
 More willing to start when I don't know how something will end. More willing to start when I don't know exactly how I'll accomplish what I'm setting out to do. More willing to accept that whatever I'm working on might not work. Braver.
 

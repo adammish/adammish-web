@@ -6,17 +6,20 @@ layout: default
 <div class=" text-center">
   <p>I write <a href="/poems">poetry</a>,
     <a href="/code">code</a>,
-    <a href="https://twitter.com/adammish">tweets</a>,
-    and <a href="/blog">blog posts</a>.
+    <a href="/blog">blog posts</a>,
+    and <a href="https://twitter.com/adammish">tweets</a>.
   </p>
   <p>I publish a poem every day,</p>
   <p>and a blog post twice a week.</p>
+  <p>Get in touch: <a href="mailto:mail@adammi.sh">mail@adammi.sh</a>.</p>
 </div>
 <div class="flex flex-col md:flex-row px-4">
   <div class="latest-poem md:w-1/2 py-6">
     <p class="italic">Today's poem:</p>
       {%- for item in collections.poem | head(-1) -%}
-        <p class="font-bold">{{ item.data.title }}</p>
+        <p>
+          <a class="font-bold" href="{{ item.url }}">{{ item.data.title }}</a>
+        </p>
         {{ item.templateContent | safe }}
       {%- endfor -%}
       <div class="mt-8">
@@ -28,7 +31,6 @@ layout: default
       {%- for item in collections.post | head(-3) | reverse -%}
         <p>
           <a class="font-bold" href="{{ item.url }}">{{ item.data.title }}</a>
-          &bull; {{ item.date | readableDate }}
         </p>
         {{ item.templateContent | section | safe }}
       {%- endfor -%}
