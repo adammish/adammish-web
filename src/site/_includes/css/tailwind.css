@@ -50,10 +50,7 @@ a.naked-link:visited {
 .content ol {
   @apply my-6;
 }
-.content li {
-  @apply list-disc;
-  @apply ml-6;
-}
+
 .content ol li {
   @apply list-decimal;
   @apply pl-2;

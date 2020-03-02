@@ -1,0 +1,18 @@
+---
+title: Adam Mish writes poetry
+layout: default
+---
+
+<section>
+  <h1 class="heading">Poems</h1>
+  <ul class="mt-6 list-none">
+    {%- for item in collections.poem | reverse -%}
+      <li>
+        <h4 class="text-lg">
+          <a href="{{ item.url }}" class="font-bold">{{ item.data.title }}</a>
+          &bull; <time value="{{ item.date }}">{{ item.date | readableDate }}</time>
+        </h4>
+      </li>
+      {%- endfor -%}
+  </ul>
+</section>

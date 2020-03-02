@@ -1,16 +1,13 @@
 ---
-title: Adam Mish - Blog
+title: Adam Mish blogs
 layout: default
 ---
 
 <section>
   <h1 class="heading">Blog posts</h1>
-  <p>
-    All of these entries are posts in a collection
-  </p>
-  <ul>
-  {%- for item in collections.post | reverse -%}
-  {% include 'components/post-teaser.njk' %}
-  {%- endfor -%}
+  <ul class="list-none">
+    {%- for item in collections.post | reverse -%}
+      {% include 'components/post-teaser.njk' %}
+    {%- endfor -%}
   </ul>
 </section>
