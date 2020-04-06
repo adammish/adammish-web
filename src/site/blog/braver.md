@@ -1,6 +1,6 @@
 ---
 title: Coding has made me braver
-date: 2020-04-02
+date: 2020-04-06
 ---
 
 I've been coding professionally now for years, and was thinking about affects it has had on my life outside of work. One thing it has definitely done is made me braver.
