@@ -1,6 +1,6 @@
 const { DateTime }  = require('luxon');
 const util          = require('util');
-const pluginRss     = require("@11ty/eleventy-plugin-rss");
+// const pluginRss     = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function(eleventyConfig) {
 
@@ -42,9 +42,9 @@ module.exports = function(eleventyConfig) {
   });
 
   // rss
-  module.exports = function (eleventyConfig) {
-    eleventyConfig.addPlugin(pluginRss);
-  };
+  // module.exports = function (eleventyConfig) {
+  //   eleventyConfig.addPlugin(pluginRss);
+  // };
 
   // minify the html output when running in prod
   if (process.env.NODE_ENV == "production") {
