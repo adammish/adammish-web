@@ -21,9 +21,11 @@ templateEngineOverride: njk, md
     </p>
   </div>
   <div class="newsletter md:w-1/2 py-6">
-    <p class="italic py-2">Get an email each Friday with the weeks new writings.</p>
-    <script async data-uid="03d2b6e1f7" src="https://sunny-leader-1529.ck.page/03d2b6e1f7/index.js"></script>
-    <p class="italic">No spam, unsubscribe anytime.</p>
+    <p class="italic py-2">I can email you each Friday with the weeks new writings.</p>
+    <form name="weekly-newsletter" method="POST" netlify>
+      <input class="bg-white focus:outline-none focus:shadow-outline border border-gray-700 rounded-lg py-2 px-4 block w-full appearance-none leading-normal placeholder-gray-700" type="email" placeholder="Your email" required>
+      <button class="bg-red-700 hover:bg-red-800 text-white font-bold py-2 px-4 mt-2 rounded focus:outline-none focus:shadow-outline" type="submit">Send it</button>
+    </form>
   </div>
 </section>
 
