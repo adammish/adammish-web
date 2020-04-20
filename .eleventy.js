@@ -18,6 +18,7 @@ module.exports = function(eleventyConfig) {
       zone: 'utc'
     }).toFormat('LLLL d, y');
   });
+
   eleventyConfig.addFilter('htmlDate', dateObj => {
     return DateTime.fromJSDate(dateObj, {
       zone: 'utc'
@@ -32,11 +33,15 @@ module.exports = function(eleventyConfig) {
 
   // Get the first `n` elements of a collection.
   eleventyConfig.addFilter("head", (array, n) => {
+    const now = new Date();
+
+    const live = p => p.date <= now;
+
     if( n < 0 ) {
-      return array.slice(n);
+      return array.filter(live).slice(n);
     }
 
-    return array.slice(0, n);
+    return array.filter(live).slice(0, n);
   });
 
 

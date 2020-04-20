@@ -6,7 +6,7 @@ layout: default
 <section>
   <h1 class="heading">Poems</h1>
   <ul class="mt-6 list-none">
-    {%- for item in collections.poem | reverse -%}
+    {%- for item in collections.poem | head() | reverse -%}
       <li>
         <h4 class="text-lg">
           <a href="{{ item.url }}" class="font-bold">{{ item.data.title }}</a>
