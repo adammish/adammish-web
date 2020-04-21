@@ -33,7 +33,7 @@ module.exports = function(eleventyConfig) {
 
   // Get the first `n` elements of a collection.
   eleventyConfig.addFilter("head", (array, n) => {
-    const now = new Date();
+    const now = DateTime.local().setZone('America/Los_Angeles');
 
     const live = p => p.date <= now;
 
