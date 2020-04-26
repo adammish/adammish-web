@@ -1,21 +1,16 @@
 ---
-title: no subject
-date: 2020-04-14
+title: some things stick
+date: 2020-04-26
 ---
+  
+he had a two bedroom apartment now  
+with a puppy&nbsp;&nbsp;&nbsp;and a girl&nbsp;&nbsp;&nbsp;and vegetables in the fridge  
+and leftovers&nbsp;&nbsp;&nbsp;still  
 
-I don't even know  
-I don't even know what to say  
-I don't know what to say  
-to you&nbsp;&nbsp;&nbsp;or how to explain  
-or what words to use  
-after all these years  
-all that comes to mind  
-all that I can think  
-to say is that yes  
-yes yes yes&nbsp;&nbsp;&nbsp;finally  
+walking past department stores  
+&nbsp;&nbsp;&nbsp;and drain pipes&nbsp;&nbsp;&nbsp;he would still look for places to sleep  
+places comfortable enough  
+where no one would spot him   
+and tell him to move along  
 
-I found it
-<br>
-<br>
-<br>
-I found it
+some things stick with you
