@@ -1,5 +1,5 @@
 ---
-title: darkness moves
+title: darkness move
 date: 2020-05-07
 ---
 
