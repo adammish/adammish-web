@@ -4,7 +4,7 @@ date: 2020-05-24
 ---
 
 I watched the sunset  
-through the hoses  
+through the houses  
 
 the one you told me  
 to look at  
