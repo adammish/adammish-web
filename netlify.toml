@@ -3,8 +3,7 @@
   publish = "dist"
 
 [context.production]
-  environment = { NODE_VERSION = "10.15.3", NODE_ENV = "production" }
-
+  environment = { NODE_VERSION = "10.15.3", NODE_ENV = "production", TZ = "America/Los_Angeles" }
 
 [dev]
   command = "npm run start"
