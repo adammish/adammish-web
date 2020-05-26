@@ -43,7 +43,6 @@ module.exports = function(eleventyConfig) {
     return array.filter(live).slice(0, n);
   });
 
-
   // minify the html output when running in prod
   if (process.env.NODE_ENV == "production") {
     eleventyConfig.addTransform("htmlmin", require("./src/utils/minify-html.js") );
