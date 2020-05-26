@@ -2,8 +2,11 @@
   command = "npm run build"
   publish = "dist"
 
+[build.environment]
+  TZ = "America/Los_Angeles"
+
 [context.production]
-  environment = { NODE_VERSION = "10.15.3", NODE_ENV = "production", TZ = "America/Los_Angeles" }
+  environment = { NODE_VERSION = "10.15.3", NODE_ENV = "production" }
 
 [dev]
   command = "npm run start"
