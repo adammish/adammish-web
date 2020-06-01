@@ -15,7 +15,7 @@ gone
 I realized what you  
 meant a couple weeks back  
 
-when you were talking about sacrafice  
+when you were talking about sacrifice  
 
 and the songs that  
 echoed long  
