@@ -74,6 +74,8 @@ code {
   margin-bottom: -1rem;
 }
 
+
+/* purgecss start ignore */
 /* For responsive youtube embeds */
 .video-responsive{
   overflow: hidden;
@@ -89,7 +91,6 @@ code {
   width: 100%;
 }
 
-/* purgecss start ignore */
 @tailwind  components;
 /* purgecss end ignore */
 
