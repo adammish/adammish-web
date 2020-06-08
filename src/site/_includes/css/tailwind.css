@@ -74,6 +74,21 @@ code {
   margin-bottom: -1rem;
 }
 
+/* For responsive youtube embeds */
+.video-responsive{
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+.video-responsive iframe{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
 /* purgecss start ignore */
 @tailwind  components;
 /* purgecss end ignore */
