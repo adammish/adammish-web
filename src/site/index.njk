@@ -3,7 +3,7 @@ title: Adam Mish
 layout: default
 ---
 
-<div class="text-center">
+<div class="site-description">
   <p>I write <a href="/poems">poetry</a>,
     <a href="/code">code</a>,
     and <a href="/blog">blog posts</a>.
@@ -12,28 +12,26 @@ layout: default
   <p>I play the saxophone.</p>
   <p>Get in touch: <a href="mailto:mail@adammi.sh">mail@adammi.sh</a>.</p>
 </div>
-<div class="flex flex-col md:flex-row px-4">
-  <div class="latest-poem md:w-1/2 py-6">
-    <p class="italic">Today's poem:</p>
+<div class="latest">
+  <div class="latest-poem">
+    <p class="latest-section-title">Today's poem:</p>
       {%- for item in collections.poem | head(-1) -%}
         <p>
-          <a class="font-bold" href="{{ item.url }}">{{ item.data.title }}</a>
+          <a class="latest-title" href="{{ item.url }}">{{ item.data.title }}</a>
         </p>
         {{ item.templateContent | safe }}
       {%- endfor -%}
-      <div class="mt-8">
-        <a href="/poems">all poems</a>
-      </div>
+        <p><a href="/poems">all poems</a></p>
   </div>
-  <div class="latest-posts md:w-1/2 py-6">
-    <p class="italic">Latest posts:</p>
+  <div class="latest-posts">
+    <p class="latest-section-title">Latest posts:</p>
       {%- for item in collections.post | head(-3) | reverse -%}
         <p>
-          <a class="font-bold" href="{{ item.url }}">{{ item.data.title }}</a>
+          <a class="latest-title" href="{{ item.url }}">{{ item.data.title }}</a>
         </p>
         {{ item.templateContent | section | safe }}
       {%- endfor -%}
-    <p class="mt-8"><a href="/blog">all posts</a></p>
+    <p><a href="/blog">all posts</a></p>
   </div>
   {# Music coming soon #}
   {# <div class="latest-track md:w-1/2 py-6">
