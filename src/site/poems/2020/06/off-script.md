@@ -8,5 +8,5 @@ rock and roll
 wet tin warehouse  
 misty sun silence  
 
-someone forgeot to yell "action!"  
+someone forgot to yell "action!"  
 and this whole damn place is off script
