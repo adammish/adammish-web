@@ -8,7 +8,7 @@ couldn't touch us
 and neither could  
 &nbsp;&nbsp;&nbsp;the dark  
 
-so we becaome  
+so we became  
 our own  
 &nbsp;&nbsp;&nbsp;light  
 and our own  
