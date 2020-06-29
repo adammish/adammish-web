@@ -8,7 +8,7 @@ a mess of sick
 a light&nbsp;&nbsp;&nbsp;and  
 no ends  
 
-I am lightning stuck  
+I am lightning struck  
 and I assert my struckness  
 
 I assert&nbsp;&nbsp;&nbsp;and you  
