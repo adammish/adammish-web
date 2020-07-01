@@ -15,17 +15,24 @@ p+p {
 /*
   Global headings conventions
 */
-h1.heading {
-  @apply text-3xl;
+h1, h2, h3 {
   @apply text-gray-900;
   @apply mb-4;
   @apply font-semibold;
 }
 
-@screen md {
-  h1.heading {
-    @apply text-3xl;
-  }
+h1 {
+  @apply text-3xl;
+}
+
+h2 {
+  @apply text-2xl;
+  @apply mt-4;
+}
+
+h3 {
+  @apply text-xl;
+  @apply mt-4;
 }
 
 /*
@@ -45,11 +52,6 @@ a:focus {
 a.naked-link:link,
 a.naked-link:visited {
   @apply border-0;
-}
-
-.content ul,
-.content ol {
-  @apply my-6;
 }
 
 .content ol li {
