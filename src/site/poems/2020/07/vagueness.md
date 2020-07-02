@@ -1,6 +1,6 @@
 ---
 title: vagueness
-date: 2020-07-03 7:00:00Z
+date: 2020-07-04 7:00:00Z
 ---
 
 allow for some  
