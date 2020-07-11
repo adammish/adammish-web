@@ -1,5 +1,5 @@
 ---
-title: some paint
+title: painting
 date: 2020-07-10 7:00:00Z
 ---
   
