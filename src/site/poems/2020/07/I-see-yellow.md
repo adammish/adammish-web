@@ -16,7 +16,7 @@ coming home
 stars  
 
 colliding  
-becomeing  
+becoming  
 something  
 
 else  
