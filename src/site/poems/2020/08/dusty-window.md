@@ -13,8 +13,8 @@ to the fire
 no  
 to me  
 
-as if
-peering and straining
-trying
-trying to see what can only
-be felt
+as if  
+peering and straining  
+trying  
+trying to see what can only  
+be felt  
