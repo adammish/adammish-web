@@ -11,7 +11,7 @@ made you dinner
 and then you  
 came home and  
 
-the saphone comes right in  
+the saxophone comes right in  
 
 right then and  
 you know the  
