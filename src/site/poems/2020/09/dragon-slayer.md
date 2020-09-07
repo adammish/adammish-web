@@ -20,5 +20,5 @@ to be fighting
 dragons
 
 fight on  
-valient dragon  
+valiant dragon  
 slayer
