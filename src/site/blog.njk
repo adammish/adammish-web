@@ -5,7 +5,7 @@ layout: default
 
 <section>
   <h1 class="heading">Blog posts</h1>
-  <ul class="list-none">
+  <ul>
     {%- for item in collections.post | head() | reverse -%}
       {% include 'components/post-teaser.njk' %}
     {%- endfor -%}

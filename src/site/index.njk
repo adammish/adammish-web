@@ -3,49 +3,46 @@ title: Adam Mish
 layout: default
 ---
 
-<div class="site-description">
-  <p>I write <a href="/poems">poetry</a>,
-    <a href="/code">code</a>,
-    and <a href="/blog">blog posts</a>.
-  </p>
-  <p>I publish a poem every day.</p>
-  <p>I play the saxophone.</p>
-  <p>Get in touch: <a href="mailto:mail@adammi.sh">mail@adammi.sh</a>.</p>
-</div>
 <div class="latest">
   <div class="latest-poem">
-    <p class="latest-section-title">Today's poem:</p>
-      {%- for item in collections.poem | head(-1) -%}
-        <p>
-          <a class="latest-title" href="{{ item.url }}">{{ item.data.title }}</a>
-        </p>
-        {{ item.templateContent | safe }}
-      {%- endfor -%}
-        <p><a href="/poems">all poems</a></p>
+    <h2>Latest poem:</h2>
+    {%- for item in collections.poem | head(-1) -%}
+      <h3>
+        <a class="latest-title" href="{{ item.url }}">{{ item.data.title }}</a>
+      </h3>
+      {{ item.templateContent | safe }}
+    {%- endfor -%}
+    <p>
+      <a href="/poems">all poems</a>
+    </p>
   </div>
-  <div class="latest-posts">
-    <p class="latest-section-title">Latest posts:</p>
+  <div>
+    <div class="latest-posts">
+      <h2>Latest posts:</h2>
       {%- for item in collections.post | head(-3) | reverse -%}
         <p>
           <a class="latest-title" href="{{ item.url }}">{{ item.data.title }}</a>
         </p>
         {{ item.templateContent | section | safe }}
       {%- endfor -%}
-    <p><a href="/blog">all posts</a></p>
-  </div>
-  {# Music coming soon #}
-  {# <div class="latest-track md:w-1/2 py-6">
-    <p class="italic">Latest track:</p>
-      {%- for item in collections.track | head(-1) -%}
+      <p>
+        <a href="/blog">all posts</a>
+      </p>
+    </div>
+    <div class="latest-track">
+      <h2>Latest track:</h2>
+      {# {%- for item in collections.track | head(-1) -%}
         <p class="font-bold">
           <a href="{{ item.url }}">{{ item.data.title }}</a>
         </p>
         {{ item.templateContent | section | safe }}
       {%- endfor -%}
-    <div class="mt-8">
-    <a href="/blog">all tracks</a> &bull; 
+      <div class="mt-8">
+        <a href="/blog">all tracks</a>
+        &bull;
         <a href="/poems">spotify</a>
-      </div>
-  </div> #}
+      </div> #}
+      <p>Weekly music coming soon 🤘.</p>
+    </div>
+  </div>
 </div>
-

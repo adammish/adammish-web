@@ -1,183 +1,388 @@
 /* Reset */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Variables */
 :root {
-    --desktop-font-size: 16px;
-    --text-color: #4a5568;
-    --link-color: #4a5568;
-    --link-border: #c53030;
-    --link-border-hover: #f56565;
-    --primary-color: #c53030;
-    --secondary-color: aliceblue;
-    --tertiary-color: whitesmoke;
+  --desktop-font-size: 1.3rem/1.5;
+  --mobile-font-size: 1.1rem/1.4;
+  --text-color:  #212121;
+  --link-color:#f9f9f9;
+  --background-color: #212121;
+  --primary-color: lightsteelblue;
+  --secondary-color: aliceblue;
+  --tertiary-color: whitesmoke;
 }
 
 /* Typography */
 body {
-    color: var(--text-color);
-    font: var(--desktop-font-size) -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto, Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji", "Segoe UI Symbol";
-    max-width: 56rem;
-    margin: auto;
-    padding: 0 1rem;
-    line-height: 1.625rem;
+  font-family: "Garamond";
+  font-size: var(--desktop-font-size);
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
 
-header {
-    margin-bottom: 2rem;
-    text-align: center;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+dl,
+img,
+figure {
+  margin: 2rem 0;
 }
 
-h1,h2,h3,h4,h5,h6,blockquote,dl,img,figure {
-    margin: 2rem 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
 }
 
-h1 { font-size: 200%; }
-h2 { font-size: 150%; }
-h3 { font-size: 120%; }
-h4,h5,h6 { font-size: 100%; }
-h5, h6 { text-transform: uppercase; }
-
-p + p {
-    margin-top: 1rem;
+h1 {
+  font-size: 200%;
 }
 
-a,a:visited { 
-    color: var(--link-color);
-    text-decoration: none;
-    border-bottom: 2px solid var(--link-border);
+h2 {
+  font-size: 150%;
 }
 
-a:hover,
-a:focus {
-    border-bottom-color: var(--link-border-hover);
+h3 {
+  font-size: 120%;
 }
 
-strong, time, b { font-weight: bold; }
-em, dfn, i { font-style: italic; }
-sub { font-size: 60%; vertical-align: bottom; }
-small { font-size: 80%; }
-
-blockquote, q {
-    background: var(--secondary-color);
-    border-left: 10px solid var(--primary-color);
-    font-family: "Georgia", serif;
-    padding: 1rem;
+h4,
+h5,
+h6 {
+  font-size: 100%;
 }
 
-blockquote p:first-child { margin-top: 0; }
+h5,
+h6 {
+  text-transform: uppercase;
+}
+
+header h1 {
+  border-bottom: 1px solid;
+}
+
+p {
+  margin: 2rem 0;
+  line-height: 1.625;
+}
+
+a,
+a:visited {
+  display: inline-block;
+  color: var(--link-color);
+  background-color: var(--background-color);
+  padding: .4rem .5rem;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+strong,
+time,
+b {
+  font-weight: bold;
+}
+
+em,
+dfn,
+i {
+  font-style: italic;
+}
+
+sub {
+  font-size: 60%;
+  vertical-align: bottom;
+}
+
+small {
+  font-size: 80%;
+}
+
+blockquote,
+q {
+  background: var(--secondary-color);
+  border-left: 10px solid var(--primary-color);
+  font-family: "Georgia", serif;
+  padding: 1rem;
+}
+
+blockquote p:first-child {
+  margin-top: 0;
+}
+
 cite {
-    font-family: "Georgia", serif;
-    font-style: italic;
-    font-weight: bold;
+  font-family: "Georgia", serif;
+  font-style: italic;
+  font-weight: bold;
 }
 
-kbd,code,samp,pre,var { font-family: monospace; font-weight: bold; }
-code, pre {
-    background: var(--tertiary-color);
-    padding: 0.5rem 1rem;
+kbd,
+code,
+samp,
+pre,
+var {
+  font-family: monospace;
+  font-weight: bold;
 }
-code pre , pre code { padding: 0; }
+
+code,
+pre {
+  background: var(--tertiary-color);
+  padding: 0.5rem 1rem;
+}
+
+code pre,
+pre code {
+  padding: 0;
+}
 
 /* Elements */
 hr {
-    background: var(--text-color);
-    border: 0;
-    height: 1px;
-    margin: 4rem 0;
+  background: var(--text-color);
+  border: 0;
+  height: 1px;
+  margin: 4rem 0;
 }
 
-img { max-width: 100%; }
+img {
+  max-width: 100%;
+}
 
 figure {
-    border: 1px solid var(--primary-color);
-    display: inline-block;
-    padding: 1rem;
-    width: auto;
+  border: 1px solid var(--primary-color);
+  display: inline-block;
+  padding: 1rem;
+  width: auto;
 }
-figure img { margin: 0; }
-figure figcaption { font-size: 80%; }
 
-ul, ol { margin: 2rem 0; padding: 0 0 0 4rem; }
+figure img {
+  margin: 0;
+}
 
-dl dd { padding-left: 2rem; }
+figure figcaption {
+  font-size: 80%;
+}
+
+ul,
+ol {
+  margin: 2rem 0;
+  padding: 0 0 0 4rem;
+}
+
+dl dd {
+  padding-left: 2rem;
+}
 
 table {
-    border: 1px solid var(--primary-color);
-    border-collapse: collapse;
-    table-layout: fixed;
-    width: 100%;
+  border: 1px solid var(--primary-color);
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
 }
-table caption { margin: 2rem 0; }
-table thead { text-align: center; }
-table tbody { text-align: right; }
-table tr { border-bottom: 1px solid var(--primary-color); }
-table tbody tr:nth-child(even) { background: var(--tertiary-color); }
-table th { background: var(--secondary-color); font-weight: bold; }
-table th, table td { padding: 1rem; }
-table th:not(last-of-type), table td:not(last-of-type) { border-right: 1px solid var(--primary-color); }
 
-input { border: 1px solid var(--text-color); padding: 0.8rem; }
-input:focus, input:active { background-color: var(--secondary-color); border-color: var(--link-color); }
+table caption {
+  margin: 2rem 0;
+}
+
+table thead {
+  text-align: center;
+}
+
+table tbody {
+  text-align: right;
+}
+
+table tr {
+  border-bottom: 1px solid var(--primary-color);
+}
+
+table tbody tr:nth-child(even) {
+  background: var(--tertiary-color);
+}
+
+table th {
+  background: var(--secondary-color);
+  font-weight: bold;
+}
+
+table th,
+table td {
+  padding: 1rem;
+}
+
+table th:not(last-of-type),
+table td:not(last-of-type) {
+  border-right: 1px solid var(--primary-color);
+}
+
+input {
+  border: 1px solid var(--text-color);
+  padding: 0.8rem;
+}
+input:focus,
+input:active {
+  background-color: var(--secondary-color);
+  border-color: var(--link-color);
+}
 
 /* Mobile Styling */
 @media screen and (max-width: 50rem) {
-    table { table-layout: auto; }
+  body {
+    font-size: var(--mobile-font-size);
+  }
+
+  table {
+    table-layout: auto;
+  }
+}
+
+.content {
+  margin-left: 25rem;
 }
 
 .site-description {
-    text-align: center;
+  background-color: var(--link-color);
+  padding: 0 2rem;
+  max-width: 25rem;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  box-shadow: inset 0 3px 6px rgba(0,0,0,0.16), inset 0 3px 6px rgba(0,0,0,0.23);
 }
 
-/* Latest */
 .latest {
-    display: flex;
+  display: flex;
 }
 
-@media screen and (max-width: 50rem) {
-    .latest {
-        flex-direction: column;
-    }
+@media screen and (max-width: 70rem) {
+  .latest {
+    flex-direction: column;
+  }
 }
 
-.latest-poem,
-.latest-posts {
-    padding: 1.5rem 0;
+.latest > div {
+  flex: 1;
 }
 
-@media screen and (min-width: 50rem) {
-    .latest-poem,
-    .latest-posts {
-        width: 50%;
-    }
+.latest-poem, .latest-posts, .latest-track {
+  background-color: var(--link-color);
+  margin: 2rem;
+  padding: 2rem;
+  box-shadow: inset 0 3px 6px rgba(0,0,0,0.16), inset 0 3px 6px rgba(0,0,0,0.23);
 }
 
-.latest-section-title {
-    font-style: italic;
+.latest .latest-poem {
+  margin-right: 0;
 }
 
-.latest-title {
-    font-weight: bold;
+@media screen and (max-width: 70rem) {
+  .latest .latest-poem {
+    margin-bottom: 0;
+    margin-right: 2rem;
+  }
 }

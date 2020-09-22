@@ -10,9 +10,10 @@ layout: default
       <li>
         <h4 class="text-lg">
           <a href="{{ item.url }}" class="font-bold">{{ item.data.title }}</a>
-          &bull; <time value="{{ item.date }}">{{ item.date | readableDate }}</time>
+          &bull;
+          <time value="{{ item.date }}">{{ item.date | readableDate }}</time>
         </h4>
       </li>
-      {%- endfor -%}
+    {%- endfor -%}
   </ul>
 </section>
