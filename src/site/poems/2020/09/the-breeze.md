@@ -14,7 +14,7 @@ we still have
 a light on  
 
 we know  
-this when  
+this is when  
 you can catch  
 a glimpse  
 of that which  
