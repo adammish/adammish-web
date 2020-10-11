@@ -1,9 +1,7 @@
 ---
-title: focused
+title: much better
 date: 2020-10-10 7:00:00Z
 ---
-
-much better  
 
 we’re keeping our  
 eyes focused  
