@@ -17,6 +17,15 @@ windows down
 radio blasting  
 go by
 
+and squirrels chatter  
+and the refrigerator moans
+
+and the highway  
+far off  
+whispers the rise  
+and fall  
+of civilization
+
 and I have  
 some coffee  
 and breakfast
