@@ -1,26 +1,29 @@
 ---
-title: in this valley
+title: Sacramento Valley
 date: 2020-10-26 7:00:00Z
 ---
 
-there are  
 mountains  
 both to the East  
 and to the West
 
-in this valley
-
-where we're
-a bit farther  
-from the stars
+and in this valley
 
 we are making  
 quite  
-a racket  
+a racket
+
 howling and  
 exploding with  
 light
 
-trying  
+because we're  
+low
+
+a bit farther  
+from the stars
+
+and trying  
+in earnest  
 to get  
 their attention
