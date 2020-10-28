@@ -31,4 +31,4 @@ I think you'd
 approve of all this
 
 of what we've got  
-goint on here
+going on here
